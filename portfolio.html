@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aimen Tech Solutions</title>
+    <meta name="description" content="Explore our portfolio of successful projects: web applications, mobile apps, AI solutions, and digital transformations.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Aimen Tech</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="chat.html">AI Chat</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1 class="hero-title">Showcasing Innovation in Action</h1>
+                <p class="hero-subtitle">Discover how we've helped businesses transform their operations and achieve remarkable results through technology.</p>
+            </div>
+        </section>
+
+        <section class="portfolio-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="ai">AI Solutions</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud Services</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop" alt="E-Commerce Platform" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Custom online store with advanced features</p>
+                                <button class="view-project-btn" data-project="1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Fitness Tracking App" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>Fitness Tracking App</h3>
+                                <p>Cross-platform mobile app for health monitoring</p>
+                                <button class="view-project-btn" data-project="2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI Customer Support" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>AI Customer Support</h3>
+                                <p>Intelligent chatbot for automated customer service</p>
+                                <button class="view-project-btn" data-project="3">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Corporate Website" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>Corporate Website Redesign</h3>
+                                <p>Modern, responsive website with CMS integration</p>
+                                <button class="view-project-btn" data-project="4">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="cloud">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Cloud Migration" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>Cloud Infrastructure Migration</h3>
+                                <p>Seamless migration to AWS with zero downtime</p>
+                                <button class="view-project-btn" data-project="5">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Food Delivery App" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>Food Delivery App</h3>
+                                <p>Real-time tracking and payment integration</p>
+                                <button class="view-project-btn" data-project="6">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-studies">
+            <div class="container">
+                <h2 class="section-title">Featured Case Studies</h2>
+                <div class="case-study">
+                    <div class="case-study-content">
+                        <h3>TechCorp Digital Transformation</h3>
+                        <p>Complete overhaul of legacy systems resulting in 300% performance improvement and 40% cost reduction.</p>
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">300%</span>
+                                <span class="metric-label">Performance Increase</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Cost Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">6 months</span>
+                                <span class="metric-label">Project Duration</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-secondary">Read Full Case Study</a>
+                    </div>
+                    <div class="case-study-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=300&fit=crop" alt="TechCorp Project" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-video">
+            <div class="container">
+                <h2 class="section-title">See Our Work in Action</h2>
+                <div class="video-container">
+                    <video controls poster="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop">
+                        <source src="videos/portfolio-showcase.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolio-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Aimen Tech Solutions</h4>
+                    <p>Leading IT outsourcing company delivering innovative solutions worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@aimentech.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest insights</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aimen Tech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

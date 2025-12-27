@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aimen Tech Solutions</title>
+    <meta name="description" content="Get in touch with Aimen Tech Solutions. Contact us for IT outsourcing services, project inquiries, or consultations.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Aimen Tech</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="chat.html">AI Chat</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="hero-title">Let's Build Something Amazing Together</h1>
+                <p class="hero-subtitle">Ready to transform your business with cutting-edge technology? We're here to help you every step of the way.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2>Get In Touch</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service of Interest *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="mobile-apps">Mobile Apps</option>
+                                    <option value="ai-solutions">AI Solutions</option>
+                                    <option value="cloud-services">Cloud Services</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="service-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-10k">Under $10,000</option>
+                                    <option value="10k-50k">$10,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="over-100k">Over $100,000</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates and insights
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                        </form>
+
+                        <div class="form-success" id="form-success">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <div class="contact-info">
+                            <h2>Contact Information</h2>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>info@aimentech.com</p>
+                                    <p>sales@aimentech.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                    <p>+1 (555) 123-4568 (Sales)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Address</h3>
+                                    <p>123 Tech Street<br>Silicon Valley, CA 94043<br>United States</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div class="contact-details">
+                                    <h3>Business Hours</h3>
+                                    <p>Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+                                    <p>Saturday: 10:00 AM - 4:00 PM PST</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-map">
+                            <h3>Find Us</h3>
+                            <div class="map-placeholder">
+                                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=300&fit=crop" alt="Office Location Map" loading="lazy">
+                                <p>Interactive map would be embedded here</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/company/aimen-tech-solutions" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+                                <a href="https://twitter.com/aimen_tech" class="social-link" target="_blank" rel="noopener">Twitter</a>
+                                <a href="https://github.com/aimen-tech" class="social-link" target="_blank" rel="noopener">GitHub</a>
+                                <a href="https://facebook.com/aimen.tech.solutions" class="social-link" target="_blank" rel="noopener">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-offices">
+            <div class="container">
+                <h2 class="section-title">Our Global Offices</h2>
+                <div class="offices-grid">
+                    <div class="office-card">
+                        <h3>Silicon Valley, USA</h3>
+                        <p>Headquarters</p>
+                        <p>123 Tech Street, Silicon Valley, CA 94043</p>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="office-card">
+                        <h3>London, UK</h3>
+                        <p>European Office</p>
+                        <p>45 Digital Square, London EC2A 1AH</p>
+                        <p>+44 20 1234 5678</p>
+                    </div>
+                    <div class="office-card">
+                        <h3>Bangalore, India</h3>
+                        <p>Development Center</p>
+                        <p>Tech Park, Whitefield, Bangalore 560066</p>
+                        <p>+91 80 1234 5678</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Aimen Tech Solutions</h4>
+                <p>Leading IT outsourcing company delivering innovative solutions worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@aimentech.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aimen Tech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Aimen Tech Solutions</title>
+    <meta name="description" content="Choose the perfect IT outsourcing plan for your business. Transparent pricing with flexible options for web development, mobile apps, and AI solutions.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Aimen Tech</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="chat.html">AI Chat</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle">🌙</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-hero">
+            <div class="container">
+                <h1 class="hero-title">Transparent Pricing for Quality IT Solutions</h1>
+                <p class="hero-subtitle">Choose the plan that fits your business needs. All plans include our core services with flexible pricing options.</p>
+                <div class="pricing-toggle">
+                    <span class="toggle-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billing-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-label">Yearly</span>
+                    <span class="discount-badge">Save 20%</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-plans">
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Starter</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount" data-monthly="2999" data-yearly="29990">$2,999</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <p>Perfect for small businesses and startups</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>Up to 40 development hours</li>
+                                <li>Basic web development</li>
+                                <li>Mobile app development</li>
+                                <li>1-month support</li>
+                                <li>Basic project management</li>
+                                <li>Email support</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Professional</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount" data-monthly="5999" data-yearly="59990">$5,999</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <p>Ideal for growing businesses</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>Up to 100 development hours</li>
+                                <li>Advanced web applications</li>
+                                <li>Cross-platform mobile apps</li>
+                                <li>AI/ML integration</li>
+                                <li>3-month support</li>
+                                <li>Dedicated project manager</li>
+                                <li>Priority email & chat support</li>
+                                <li>Cloud deployment</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Enterprise</h3>
+                            <div class="pricing-price">
+                                <span class="price-amount" data-monthly="9999" data-yearly="99990">$9,999</span>
+                                <span class="price-period">/month</span>
+                            </div>
+                            <p>For large-scale enterprises</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>Unlimited development hours</li>
+                                <li>Full-stack development</li>
+                                <li>Custom AI solutions</li>
+                                <li>Cloud architecture design</li>
+                                <li>DevOps & CI/CD</li>
+                                <li>12-month support</li>
+                                <li>Dedicated team</li>
+                                <li>24/7 phone support</li>
+                                <li>Security audits</li>
+                                <li>Performance monitoring</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-calculator">
+            <div class="container">
+                <h2 class="section-title">Project Cost Calculator</h2>
+                <p class="calculator-intro">Get an instant estimate for your project. Select your requirements below for a personalized quote.</p>
+
+                <div class="calculator-container">
+                    <div class="calculator-form">
+                        <div class="calc-section">
+                            <h3>Project Type</h3>
+                            <div class="calc-options">
+                                <label class="calc-option">
+                                    <input type="radio" name="project-type" value="web" checked>
+                                    <span class="option-label">Web Development</span>
+                                    <span class="option-price">$50/hour</span>
+                                </label>
+                                <label class="calc-option">
+                                    <input type="radio" name="project-type" value="mobile">
+                                    <span class="option-label">Mobile App</span>
+                                    <span class="option-price">$60/hour</span>
+                                </label>
+                                <label class="calc-option">
+                                    <input type="radio" name="project-type" value="ai">
+                                    <span class="option-label">AI Solution</span>
+                                    <span class="option-price">$80/hour</span>
+                                </label>
+                                <label class="calc-option">
+                                    <input type="radio" name="project-type" value="cloud">
+                                    <span class="option-label">Cloud Migration</span>
+                                    <span class="option-price">$70/hour</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="calc-section">
+                            <h3>Project Complexity</h3>
+                            <div class="calc-options">
+                                <label class="calc-option">
+                                    <input type="radio" name="complexity" value="simple" checked>
+                                    <span class="option-label">Simple</span>
+                                    <span class="option-multiplier">×1.0</span>
+                                </label>
+                                <label class="calc-option">
+                                    <input type="radio" name="complexity" value="medium">
+                                    <span class="option-label">Medium</span>
+                                    <span class="option-multiplier">×1.5</span>
+                                </label>
+                                <label class="calc-option">
+                                    <input type="radio" name="complexity" value="complex">
+                                    <span class="option-label">Complex</span>
+                                    <span class="option-multiplier">×2.0</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="calc-section">
+                            <h3>Estimated Hours</h3>
+                            <div class="hours-slider">
+                                <input type="range" id="hours-slider" min="40" max="500" value="100" step="10">
+                                <div class="slider-labels">
+                                    <span>40h</span>
+                                    <span id="hours-value">100h</span>
+                                    <span>500h</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-section">
+                            <h3>Additional Services</h3>
+                            <div class="additional-services">
+                                <label class="service-checkbox">
+                                    <input type="checkbox" value="40">
+                                    <span class="checkmark"></span>
+                                    <span class="service-label">UI/UX Design (+$40/hour)</span>
+                                </label>
+                                <label class="service-checkbox">
+                                    <input type="checkbox" value="30">
+                                    <span class="checkmark"></span>
+                                    <span class="service-label">Project Management (+$30/hour)</span>
+                                </label>
+                                <label class="service-checkbox">
+                                    <input type="checkbox" value="25">
+                                    <span class="checkmark"></span>
+                                    <span class="service-label">Testing & QA (+$25/hour)</span>
+                                </label>
+                                <label class="service-checkbox">
+                                    <input type="checkbox" value="35">
+                                    <span class="checkmark"></span>
+                                    <span class="service-label">Maintenance Support (+$35/hour)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator-result">
+                        <div class="result-card">
+                            <h3>Estimated Cost</h3>
+                            <div class="total-price">
+                                <span class="currency">$</span>
+                                <span id="total-cost">5,000</span>
+                            </div>
+                            <div class="price-breakdown">
+                                <div class="breakdown-item">
+                                    <span>Base Cost:</span>
+                                    <span id="base-cost">$5,000</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span>Additional Services:</span>
+                                    <span id="additional-cost">$0</span>
+                                </div>
+                                <div class="breakdown-item total">
+                                    <span>Total:</span>
+                                    <span id="final-total">$5,000</span>
+                                </div>
+                            </div>
+                            <div class="result-actions">
+                                <a href="contact.html" class="btn btn-primary">Get Detailed Quote</a>
+                                <button class="btn btn-secondary" id="reset-calculator">Reset Calculator</button>
+                            </div>
+                            <p class="disclaimer">* This is an estimate. Final pricing may vary based on specific requirements and project scope.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-comparison">
+            <div class="container">
+                <h2 class="section-title">Compare Plans</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Starter</th>
+                                <th>Professional</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Development Hours</td>
+                                <td>40/month</td>
+                                <td>100/month</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile Development</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>AI/ML Integration</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Cloud Services</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Support Duration</td>
+                                <td>1 month</td>
+                                <td>3 months</td>
+                                <td>12 months</td>
+                            </tr>
+                            <tr>
+                                <td>Project Manager</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>24/7 Support</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Security Audits</td>
+                                <td>✗</td>
+                                <td>✗</td>
+                                <td>✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-faq">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">What payment methods do you accept?</button>
+                        <div class="faq-answer">
+                            <p>We accept all major credit cards, bank transfers, and popular payment platforms like PayPal and Stripe.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Can I change my plan anytime?</button>
+                        <div class="faq-answer">
+                            <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the next billing cycle.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you offer custom solutions?</button>
+                        <div class="faq-answer">
+                            <p>Absolutely! For unique requirements, we provide custom quotes. Contact our sales team for a personalized proposal.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What's included in the support?</button>
+                        <div class="faq-answer">
+                            <p>Support includes bug fixes, updates, and technical assistance. Enterprise plans include 24/7 phone support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-cta">
+            <div class="container">
+                <h2>Ready to Get Started?</h2>
+                <p>Not sure which plan is right for you? Let's discuss your project requirements.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Sales</a>
+                    <a href="chat.html" class="btn btn-secondary">Chat with AI Assistant</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Aimen Tech Solutions</h4>
+                    <p>Leading IT outsourcing company delivering innovative solutions worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@aimentech.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest insights</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aimen Tech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
